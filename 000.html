@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script>	
+		let n = prompt("Nhap so phan tu:");
+		let a = new Array();
+		let i;
+		let chan = "";
+		let le = "";
+		let day_n = "";
+		for(i=0;i<n;i++){
+			a[i] = i + 1;
+			day_n  += " " + a[i];
+		}
+		for(i=0;i<n;i++){
+			if(a[i]%2==0){
+				chan  += " " + a[i];
+			}
+			else if(a[i]%2==1){
+				le += " " + a[i];
+			}
+		}
+		alert( "day so chan la: " + chan + ", day so le la: " + le + ", day so tu 1 - n la: "+ day_n);
+	 </script>
+  </head>
+  <body>
+ 
+  </body>
+</html>
